@@ -60,6 +60,17 @@ span{
     font-weight: 500;
     padding: 10px 20px;
 }
+.nav a:hover{
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(18,247,255,0.6),
+    0 0 20px rgba(18,247,255,0.6),
+    0 0 30px rgba(18,247,255,0.6),
+    0 0 40px rgba(18,247,255,0.6),
+    0 0 70px rgba(18,247,255,0.6),
+    0 0 80px rgba(18,247,255,0.6),
+    0 0 100px rgba(18,247,255,0.6),
+    0 0 150px rgba(18,247,255,0.6);;
+}
 
 #menu-icon{
     font-size: 1.8rem;
@@ -101,6 +112,27 @@ span{
     font-size: 1.5rem;
 }
 
+.social-icon a:hover{
+    border: 2px solid yellow;
+    color: var(--hover-color) !important;
+}
+
+.social-icon a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg_color);
+    transition: .4s;
+    z-index: -1;
+}
+
+.social-icon a:hover::before{
+    width: 100%;
+
+}
 
 
 .btn-box{
@@ -131,9 +163,42 @@ span{
     z-index: 1;
 }
 
+a.btn:hover{
+    border: 2px solid yellow;
+    color: var(--hover-color) !important;
+}
 
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--bg_color);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: .4s;
+}
 
+.btn:hover::before{
+    width: 100%;
+}
 
+.btn:nth-child(2){
+    background: var(--bg_color);
+    color: var(--hover-color) !important;
+    border: 2px solid yellow;
+}
+
+.btn:nth-child(2):hover{
+    color: var(--bg_color) !important;
+    background-color: yellow !important;
+    border: 2px solid indigo;
+}
+
+.btn:nth-child(2)::before{
+    background: yellow;
+}
 
 
 section{
@@ -160,8 +225,8 @@ section{
 }
 
 .home-cont h1{
-    font-weight: 700;
     font-size: var(--big-font);
+    font-weight: 700;
 }
 
 .chng{
@@ -182,6 +247,26 @@ section{
 }
 
 
+.letter {
+    display: inline-block;
+    opacity: 1; 
+    transform: translateY(0); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.letter.in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.letter.out {
+    opacity: 0;
+    transform: translateY(-1em);
+}
+
+.letter.behind {
+    opacity: 0;
+}
 
 .home-cont p{
     color: #bdbdbd;
