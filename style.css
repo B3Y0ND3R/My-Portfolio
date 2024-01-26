@@ -160,8 +160,8 @@ section{
 }
 
 .home-cont h1{
-    font-size: var(--big-font);
     font-weight: 700;
+    font-size: var(--big-font);
 }
 
 .chng{
