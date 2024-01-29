@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const animationDelay = 80;
     const transitionDelay = 340;
     const initialWordDelay = 1000;
-    const wordDisplayDelay = 500; 
+    const wordDisplayDelay = 1000; 
     const interval = 3000;
 
     words.forEach((word) => {
@@ -53,4 +53,53 @@ document.addEventListener("DOMContentLoaded", function () {
         changeText();
         setInterval(changeText, interval);
     }, initialWordDelay);
-});
+
+
+    const scrollUpButton = document.querySelector('.scroll-to-top a');
+    const scrollDownButton = document.querySelector('.scroll-to-about a');
+
+    // Smooth scrolling for the upper arrow
+    scrollUpButton.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetSection = document.querySelector(this.getAttribute('href'));
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+    // Smooth scrolling for the lower arrow
+    scrollDownButton.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetSection = document.querySelector(this.getAttribute('href'));
+      targetSection.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+
+    // Show/hide the scroll buttons based on scroll position
+    window.addEventListener('scroll', function () {
+      const aboutSection = document.getElementById('about');
+      const homeSection = document.getElementById('home');
+      const scrollUpButton = document.querySelector('.scroll-to-top');
+      const scrollDownButton = document.querySelector('.scroll-to-about');
+
+      if (window.scrollY > aboutSection.offsetTop) {
+        scrollUpButton.style.display = 'block';
+      } else {
+        scrollUpButton.style.display = 'none';
+      }
+
+      if (window.scrollY < homeSection.offsetHeight) {
+        scrollDownButton.style.display = 'block';
+      } else {
+        scrollDownButton.style.display = 'none';
+      }
+    });
+
+
+
+
+  });
+
