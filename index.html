@@ -6,24 +6,28 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
     <script src="script.js"></script>
 </head>
 <body>
 
     <!-- HEADER -->
 
-    <header>
-        <div class="logo"><img src="hiclipart.com.png" alt="">
+    <header id="h">
+        <div class="logo" id="logo"><img src="a.png" alt="">
             
-            <p>    
-            <span>&nbsp&nbspHas</span>ib.
-        </p></div>
+               
+           <h2 data-text="HASIB.">HASIB.</h2>
+        </div>
 
-        <nav>
+        <nav id="n">
             <a href="#home">Home<span></span></a>
             <a href="#about">About<span></span></a>
-            <a href="#">Skills<span></span></a>
-            <a href="#">Contact<span></span></a>
+            <a href="#skills">Skills<span></span></a>
+            <a href="#projects">Projects<span></span></a>
+            <a href="#contact">Contact<span></span></a>
         </nav>
         <div id="menu-icon" class="bx bx-menu"></div>
     </header>
@@ -34,6 +38,7 @@
     <section id="home" class="home">
         
         <div class="home-cont">
+            <br><br><br><br>
             <h3>Bonjour! I'm</h3><br><h1> Ahsanul Haque Hasib </h1>
             <div class="chng">
                 <h3>And I'm </h3>
@@ -54,15 +59,61 @@
             </div>
             <div class="btn-box">
                 <a href="#" class="btn">Download CV</a>
-                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Hire Me</a>                
             </div>
-            <div class="social-icon">
-                <a href="https://www.facebook.com/ahsanul.haque.hasib.188"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/ahsanul_hasib2?igsh=OG9kbmtxdmNlc2Vt"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/B3Y0ND3R"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <div class="icons">
+                <a href="https://www.facebook.com/ahsanul.haque.hasib.188">
+                   <div class="layer">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span class="fab fa-facebook-f"></span>
+                   </div>
+                   <div class="text">
+                      Facebook
+                   </div>
+                </a>
+                
+                <a href="https://www.instagram.com/ahsanul_hasib2?igsh=OG9kbmtxdmNlc2Vt">
+                   <div class="layer">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span class="fab fa-instagram"></span>
+                   </div>
+                   <div class="text">
+                      Instagram
+                   </div>
+                </a>
+                <a href="https://github.com/B3Y0ND3R">
+                   <div class="layer">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span class="fab fa-github"></span>
+                   </div>
+                   <div class="text">
+                      Github
+                   </div>
+                </a>
+                <a href="#">
+                   <div class="layer">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span class="fab fa-linkedin-in"></span>
+                   </div>
+                   <div class="text">
+                      Linkedin
+                   </div>
+                </a>
+             </div>    
 
-            </div>
+            
         </div>
 
         <div class="home-img">
@@ -130,34 +181,93 @@
             </div>
         </div>
 
-        <div class="scroll-to-about">
-            <a href="#about"><i class="bx bx-down-arrow-alt"></i></a>
-          </div>
     </section>
 
 
     <!--About-->
 
     <section id="about" class="about">
-        
         <div class="img-about">
             <img src="Khabib.png" alt="">
             <div class="about-cont">
                 <span>Let me introduce myself</span>
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda aperiam facere pariatur, molestiae corrupti autem. Ab in eaque inventore adipisci nulla, sint quo omnis a ducimus? Laboriosam, quam culpa? Hic doloribus reiciendis iusto.</p>
+                <p class="short-description">
+                    I am currently employed as an Assistant Professor in the Department of Computer Science and Engineering at <b>Khulna University of Engineering &amp; Technology, Bangladesh.</b> I pursued my Master’s degree in 2023, specializing in Medical Image Analysis, through an <a onclick="window.open('https://maiamaster.udg.edu/')" class="hyper__text">Erasmus Mundus Joint Master Degree Program</a> coordinated by the <b>University of Girona</b>, with funding provided by the European Union. I did my MSc thesis, titled <b>“Temporal Image Registration using deep learning for 3D Fetal Echocardiography,”</b> under the supervision of <a onclick="window.open('https://scholar.google.com/citations?hl=en&amp;user=TUa2r84AAAAJ&amp;view_op=list_works&amp;sortby=pubdate')" class="hyper__text">Dr. Choon Hwai Yap</a> at <b>Imperial College London</b>.</p><br>
+                <p class="full-description">
+                    
+                    I am currently employed as an Assistant Professor in the Department of Computer Science and Engineering at <b>Khulna University of Engineering &amp; Technology, Bangladesh.</b> I pursued my Master’s degree in 2023, specializing in Medical Image Analysis, through an <a onclick="window.open('https://maiamaster.udg.edu/')" class="hyper__text">Erasmus Mundus Joint Master Degree Program</a> coordinated by the <b>University of Girona</b>, with funding provided by the European Union. I did my MSc thesis, titled <b>“Temporal Image Registration using deep learning for 3D Fetal Echocardiography,”</b> under the supervision of <a onclick="window.open('https://scholar.google.com/citations?hl=en&amp;user=TUa2r84AAAAJ&amp;view_op=list_works&amp;sortby=pubdate')" class="hyper__text">Dr. Choon Hwai Yap</a> at <b>Imperial College London</b>.
+                    <br><br>
+                    Throughout my master's, I got the opportunity to undertake a summer internship at the research laboratory of <b>Institut Pascal</b> in France. During this internship, I focused on <b>'Diagnostic and therapeutic management of superficial tumors of the digestive tract assisted by artificial intelligence,'</b> under the guidance of <a onclick="window.open('https://scholar.google.com/citations?user=_KUZlKYAAAAJ&amp;hl=en')" class="hyper__text">Dr. Adrien Bartoli</a>. Additionally, I actively participated in the <b>16th EXCITE Zurich Summer School</b> on Biomedical Imaging with the participation grant, hosted by the <b>University and ETH Zurich</b>.
+                    <br><br>
+                    I graduated with a Bachelor's degree in Computer Science and Engineering from Khulna University of Engineering &amp; Technology in 2019, achieving first class first honors. My graduation thesis, titled <b>“Efficient Partitioning Algorithm for Parallel Multidimensional Matrix Operations by Linearization,”</b> was supervised by <a onclick="window.open('https://scholar.google.com/citations?user=U5DZvDEAAAAJ&amp;hl=en')" class="hyper__text">Dr. K. M. Azharul Hasan</a>.
+                    <br><br>
+                    My current research interests encompass <b>Medical Image Analysis</b> and <b>Artificial Intelligence</b>, with a focus on Deep Learning and its applications in the field of medicine and diagnosis. Find my complete <b>CV</b> <a class="hyper__text" onclick="window.open('./assets/CV_Kazi Saeed Alam (Long).pdf')">here...</a>
+                <br>
+                    <a href="#" id="read-less">Read Less</a>
+                </p>
                 <div class="btn-box">
-                    <a href="#" class="btn">Read More!</a>
+                    <a href="#" class="btn" id="read-more">Read More!</a>
                 </div>
                 
             </div>
 
         </div>
-        <div class="scroll-to-top">
-            <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
-        </div> 
+
+      
     </section>
 
+
+
+    <section id="skills" class="skills">
+        <h1>Skills</h1><br>
+
+        <div class="card">
+            <h3 class="card-info">Java</h3>
+                <div class="social-icon">
+                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><i class='bx bxl-java'></i></i></a></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, iure delectus nihil eius eveniet consequatur? Dolores asperiores sint perspiciatis, aspernatur fugit quos eaque odio eius nihil qui hic nemo ratione!</p>
+        </div>
+
+
+        <div class="card">
+            <h3 class="card-info">C++</h3>
+                <div class="social-icon">
+                <a href="https://en.wikipedia.org/wiki/C%2B%2B"><i class='bx bxl-c-plus-plus'></i></a></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor consequuntur esse earum, voluptatem at consequatur quidem magnam fugit ex expedita dignissimos illum porro placeat modi. Delectus ipsum dicta cumque laborum!</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-info">JavaScript</h3>
+                <div class="social-icon">
+                <a href="https://en.wikipedia.org/wiki/JavaScript"><i class='bx bxl-javascript' ></i></a></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum similique at omnis in? Ex quam voluptatem rerum, error voluptas necessitatibus sit quisquam nam dolores aperiam dolorum, iure saepe sed veniam!</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-info">CSS</h3>
+                <div class="social-icon">
+                <a href="https://en.wikipedia.org/wiki/CSS"><i class='bx bxl-css3' ></i></a></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quo rerum quibusdam perspiciatis fugiat quidem delectus quos minus magni laborum eos quasi vel vero aut! Minus saepe perferendis assumenda corrupti?</p>
+        </div>
+
+
+        <div class="card">
+            <h3 class="card-info">HTML</h3>
+                <div class="social-icon">
+                <a href="https://en.wikipedia.org/wiki/HTML"><i class='bx bxl-html5'></i></a></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eos dignissimos! Omnis qui iure saepe alias dicta, et eos numquam quia sapiente, commodi dolorum ratione quidem quis unde deserunt optio.</p>
+        </div>
+
+        <div class="card">
+            <h3 class="card-info">Pyhton</h3>
+                <div class="social-icon">
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><i class='bx bxl-python'></i></a></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium exercitationem doloremque aperiam mollitia perferendis voluptatum, ab deserunt officia tempore eum sint repellat ullam quas ipsam recusandae repellendus! Sequi, nulla dolor!</p>
+        </div>
+
+
+    </section>
 
 </body>
 </html>
